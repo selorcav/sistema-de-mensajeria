@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  color: #1B1F21;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  transition: .3s;
+}
+.container{
+  display: flex;
+  background-color: #E8EBE4;
+  position: relative;
+}
+main{
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  padding-left: 100px;
+}
+main img{
+  max-width: 50%;
+  width: 300px;
+  margin-bottom: 1.5em;
+}
+main p, main h1{
+  margin: 0.2rem 0;
+  text-align: center;
+}
+main p{
+  font-size: 1.1rem;
+}
+main h1{
+  font-size: 3rem;
+}
+.bold{
+  font-weight: bold;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ .menu-contactos {
+  min-width: 80px;
+}
+input[type="checkbox"]:checked + .menu-contactos .perfil .perfil-foto {
+  display: none;
+}
+.menu-contactos{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  min-width: 300px;
+  min-height: 100vh;
+  background-color: #fff;
+}
+.perfil{
+  padding: .7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.perfil-foto{
+  overflow: hidden;
+  border-radius: 50%;
+  min-width: 40px;
+  min-height: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.perfil-foto img{
+  width: 100%;
+}
+.perfil .menu-icon{
+  color: #828485;
+  font-size: 1.5rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+.perfil-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  width: 100%;
+}
+input[type="checkbox"]:checked + .menu-contactos .perfil-content {
+  display: none;
+}
+.perfil-content i {
+  color: #828485;
+}
+.perfil-content-user h3{
+  font-size: 1rem;
+}
+.perfil-content-user p{
+  color: #828485;
+  font-size: .6rem;
+}
+.border-bottom-tab{
+  border-bottom: solid 2px #E8EBE4;
+}
+.nuevo-chat{
+  padding: 2.5rem;
+}
+.nuevo-chat a{
+  text-decoration: none;
+  background-color: #A491D2;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+.nuevo-chat a:hover{
+  background-color: #6f59a3;
+}
+.perfil-mensaje{
+  display: flex;
+  padding: 1rem;
+}
+.perfil-user{
+  margin: 0 1rem ;
+}
+.perfil-user h3{
+  font-size: 1rem;
+}
+.perfil-user p{
+  font-size: .9rem;
+}
+
+input[type="checkbox"]:checked + .menu-contactos .perfil-user {
+  display: none;
+}
+input[type="checkbox"]:checked + .menu-contactos .nuevo-chat {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  main p{
+    font-size: .8rem;
+  }
+  main h1{
+    font-size: 2rem;
+  }
+  .menu-contactos{
+    position: absolute;
+  }
+}
